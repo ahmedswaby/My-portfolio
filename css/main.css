@@ -1,0 +1,301 @@
+/*.message-actionable
+ * border: 1px dotted yellow
+ * color: yellow
+ * margin: 20px
+ * padding: 10px
+ * .message-actionable button
+ * float: right*/
+button.under-title {
+  background: transparent;
+  color: #FFF;
+  padding: 10px 25px;
+  font-size: 25px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+button.under-title i {
+  margin-right: 5px;
+}
+button.under-title:hover {
+  background-color: #008080;
+  border-color: #008080;
+}
+@media (max-width: 991px) {
+  button.under-title:hover {
+    background-color: transparent;
+    border-color: #FFF;
+  }
+}
+button.under-title:hover i {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 991px) {
+  button.under-title:hover i {
+    transform: rotate(0deg);
+  }
+}
+
+.contact-us .under-title {
+  background: transparent;
+  color: #FFF;
+  padding: 3px 13px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+.contact-us .under-title i {
+  margin-right: 5px;
+}
+.contact-us .under-title:hover {
+  background-color: #008080;
+  border-color: #008080;
+}
+@media (max-width: 991px) {
+  .contact-us .under-title:hover {
+    background-color: transparent;
+    border-color: #FFF;
+  }
+}
+
+.nav-bar {
+  display: none;
+}
+.nav-bar nav {
+  background-color: #008080 !important;
+}
+.nav-bar nav a.nav-link {
+  padding: 10px 25px !important;
+  color: #FFF !important;
+  font-weight: 500;
+}
+
+.navbar .navbar-toggler {
+  outline: none;
+}
+
+.header {
+  background-image: url(../img/filler.png);
+  height: 100vh;
+  background-size: cover;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.header .mytitle {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+@media (max-width: 768px) {
+  .header .mytitle {
+    font-size: 35px;
+  }
+}
+@media (max-width: 578px) {
+  .header .mytitle {
+    font-size: 25px;
+  }
+}
+.header span {
+  color: #008080;
+}
+
+/*globally*/
+*, body {
+  font-family: "Lora", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.nav-bar nav li.nav-item.active a.nav-link {
+  color: #5fa2a2 !important;
+}
+
+/*About Section design*/
+.about {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.about .title .h1 {
+  font-weight: 500;
+}
+.about .title hr {
+  border-bottom: 2px solid #999;
+  width: 10%;
+  margin: auto;
+}
+.about .feature {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about .feature i {
+  font-size: 50px;
+  color: #008080;
+  margin-bottom: 20px;
+}
+.about .feature p {
+  color: #999;
+  width: 90%;
+  margin: auto;
+}
+.about .skills-section .itsme {
+  margin-bottom: 30px;
+}
+.about .skills-section .itsme img {
+  width: 32%;
+  margin-bottom: 20px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  border-radius: 34px;
+}
+.about .skills-section .itsme p {
+  color: #999;
+  width: 80%;
+  margin: auto;
+}
+.about .skills-section .itsme h4 {
+  margin-top: 10px;
+}
+.about .skills-section .progress {
+  margin-bottom: 20px;
+  height: 25px;
+}
+
+/*projects design section*/
+.projects {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.projects .info h2 {
+  margin-bottom: 20px;
+}
+.projects .info p {
+  color: #999;
+}
+.projects .info p a {
+  color: blue;
+}
+.projects .img {
+  position: relative;
+  margin-top: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.projects .img:hover .overlay {
+  opacity: 0.7;
+}
+.projects .img img {
+  width: 100%;
+  height: 250px;
+}
+.projects .img .overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: #008080;
+  color: #FFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -moz-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.projects .img .overlay a {
+  border: 1px solid #FFF;
+  padding: 10px 24px;
+  border-radius: 23px;
+  margin-top: 10px;
+}
+
+/*contact-us section*/
+.contact-us {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #252934;
+  color: #FFF;
+  position: relative;
+}
+.contact-us .info .h1 {
+  font-weight: bold;
+}
+.contact-us .info hr {
+  border-bottom: 2px solid #FFF;
+  width: 10%;
+  margin: 1rem auto;
+}
+.contact-us .info p {
+  font-weight: bold;
+  color: #2eabea;
+  margin-bottom: 20px;
+}
+.contact-us .form .form-control {
+  background-color: #1E242C;
+  border-color: #1E242C;
+  width: 70%;
+  margin: 20px auto;
+  outline: none;
+}
+.contact-us .form .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+.contact-us .form p {
+  text-align: right;
+}
+.contact-us .scroll-up {
+  position: absolute;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  background-color: #008080;
+  border-radius: 25px;
+  line-height: 3;
+  text-align: center;
+  bottom: -24px;
+}
+
+/*footer section design*/
+.footer {
+  background-color: #1E242C;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #FFF;
+}
+.footer .social-media i {
+  font-size: 20px;
+  margin: 20px;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.footer .social-media i:hover {
+  transform: scale(1.5);
+}
+.footer .copy-right span {
+  color: #008080;
+}
+
+/*# sourceMappingURL=main.css.map */
